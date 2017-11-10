@@ -1,0 +1,21 @@
+doctype html 
+
+head
+	title Welcome to Market Monster 
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato")
+	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland")
+	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play")
+	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lekton")
+	link(rel="stylesheet" href="/public/styles/main.css")
+	script(src="/socket.io/socket.io.js")
+	script(src="//d3js.org/d3.v3.min.js")
+	script.
+		var stocks = !{JSON.stringify(stocks)};
+		var socket = io.connect('/');
+	
+body
+	div.app 
+	div#note
+		p.lower Adding and removing stocks from the tracker will update the list across all clients.
+	script(src='build/bundle.js')

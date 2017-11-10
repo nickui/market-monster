@@ -1,0 +1,215 @@
+body {
+	background:radial-gradient(#8ECADE,#636363);
+	height:900px;
+}
+
+.container {
+	height:650px;
+}
+
+.chartContainer {
+	position:relative;
+	height:85%;
+	width:79%;
+	top:5%;
+	float:left;
+	background-color:#4F4F4F;
+	box-shadow:0px 0px 5px 3px #262626;
+	pointer-events:none;
+}
+
+.chartContainer h2 {
+	text-align:center;
+	margin-top:25%;
+	margin-left:10%;
+	color:white;
+	font-family:Iceland;
+	letter-spacing:2px;
+	border:1px solid white;
+	width:80%;
+	
+}
+
+#titleText {
+	font-size:.8em;
+	position:absolute;
+	left:25px;
+	color:grey;
+	font-weight:700;
+	top:2px;
+	font-family:sans-serif;
+
+}
+
+#rangeBar {
+	position:absolute;
+	top:0;
+	left:82%;
+	height:30px;
+	width:250px;
+	z-index:35;
+	pointer-events:all;
+	margin-left:25px;
+}
+
+.rangeBtn {
+	display:inline-block;
+	position:relative;
+	margin-left:10px;
+	color:#949494;
+	font-size:.6em;
+	background-color:#3B3B3B;
+	height:18px;
+	width:18px;
+	text-align:center;
+	line-height:18px;
+	z-index:50;
+	cursor:pointer;
+}
+
+.toolBar {
+	position:relative;
+	height:85%;
+	width:20%;
+	box-shadow:0px 0px 5px 3px #262626;
+	float:right;
+	top:5%;
+	background-color:#5E5E5E;
+	overflow:auto;
+	
+}
+
+#stockInput {
+	position:relative;
+	width:90%;
+	height:30px;
+	top:10px;
+	left:50%;
+	transform:translate(-50%,0);
+	background-color:#383838;
+	border:none;
+	color:white;
+	border:1px solid #E3E3E3;
+	text-align:center;
+	font-family:Lato;
+}
+
+ul {
+	list-style:none;
+	margin-top:25px;
+	border:1px solid white;
+}
+
+#listHolder {
+	margin-top:20px;
+}
+
+.listItem {
+	position:relative;
+	padding:5px;
+	border:1px solid rgba(255,255,255,.5);
+	left:0;
+	text-align:left;
+	border-left:none;
+	border-right:none;
+	margin-bottom:5px;
+	background-color:#525252;
+	
+}
+
+.codeName {
+	color:#53BDE0;
+	font-family:Play;
+}
+
+.stockValue {
+	color:#42EB77;
+	font-family:Play;
+
+}
+
+.extName {
+	font-size:.7em;
+	color:white;
+	
+}
+
+.removeItem {
+	position:absolute;
+	height:100%;
+	width:7px;
+	right:0px;
+	top:0px;
+	background-color:#C7C7C7;
+	cursor:pointer;
+	font-size:.8em;
+	line-height:60px;
+	color:grey;
+	
+}
+
+.line {
+  fill: none;
+  stroke: #59BDDE;
+  stroke-width: 1.5px;
+}
+
+.axis path, .axis line { 
+	fill:none;
+	stroke:#000;
+	shape-rendering: crispEdges;
+}
+
+.tick line {
+	stroke:rgba(255,255,255,.1);
+}
+
+.axis {
+	font-size:.7em;
+	fill:white;
+}
+
+.overlay {
+	fill:none;
+	pointer-events:all;
+}
+
+.lineMarker {
+	stroke:white;
+	stroke-width:1;
+	shape-rendering: auto;
+}
+
+.popUp text {
+	pointer-events:none;
+	fill:white;
+	font-family:Lato;
+	font-size:.8em;
+	
+}
+
+.popUp {
+	pointer-events:none;
+}
+
+#note {
+	margin:auto;
+	width:55%;
+	font-size:2em;
+	font-family:Lekton;
+	text-align:center;
+	
+}
+
+#note .lower {
+	font-size:.8em;
+}
+
+
+
+
+
+
+
+
+
