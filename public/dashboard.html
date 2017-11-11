@@ -5,7 +5,7 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Market Monster</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -89,13 +89,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">About</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Guest</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Sign Up</a>
-				</li>
-			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button">Log In</button>
+			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button">Log Out</button>
 		</div>
 	</nav><!-- Jumbotron -->
   
@@ -106,43 +100,43 @@
             <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
               <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="#">Dashboard <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Reports</a>
+                  <a class="nav-link" href="#">Your Wallet</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Analytics</a>
+                  <a class="nav-link" href="#">Your Stocks</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Export</a>
-                </li>
-              </ul>
-    
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
+                  <a class="nav-link" href="#">Transaction History</a>
                 </li>
               </ul>
     
               <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
+                  <a class="nav-link" href="#">League Stats</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
+                  <a class="nav-link" href="#">Following</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
+                  <a class="nav-link" href="#">Fact Of The Day</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quote Of The Day</a>
+                </li>
+              </ul>
+    
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Learn More</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Out</a>
                 </li>
               </ul>
             </nav>
@@ -157,40 +151,29 @@
                 <br><br>
               <div class="card-columns">
 
-<!-- Stock Chart with Stock table -->
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Your Stocks</h4>
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Stock</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">% Change</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">AAPL</th>
-                            <td>$175.86</td>
-                            <td>+3%</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">TSLA</th>
-                            <td>$307.43</td>
-                            <td>-2%</td>
+<!-- Wallet -->
 
-                          </tr>
-                          <tr>
-                            <th scope="row">VFC</th>
-                            <td>$69.36</td>
-                            <td>+7%</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                  </div>
-                </div>
+<div class="card text-center">
+    <div class="card-body">
+      <h4 class="card-title">Your Wallet</h4>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">$</th>
+                <th scope="col">+/-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$1000.00</td>
+                <td>$0.35</td>
+              </tr>
+            </tbody>
+          </table>
+
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>  
+  </div>
 
 <!-- League Scores -->
 <div class="card text-center">
@@ -214,13 +197,22 @@
               <th scope="row">2</th>
               <td>@Nick</td>
               <td>$2700</td>
-
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>@Nathan</td>
               <td>$2000</td>
             </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>@Kristine</td>
+                <td>$1200</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>@Chris</td>
+                <td>$2</td>
+              </tr>
           </tbody>
         </table>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -228,67 +220,168 @@
   </div>
 
 <!-- Warren Buffet Quote of the Day -->
-<div class="card bg-primary text-white text-center p-3">
+<div class="card text-center p-3">
+    <h4 class="card-title">Fact Of The Day</h4>
+      <hr>
     <blockquote class="blockquote mb-0">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
       <footer class="blockquote-footer">
         <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Warren Buffett <cite title="Source Title">Forbes 2012</cite>
         </small>
       </footer>
     </blockquote>
   </div>
 
-<!-- Plavceholder -->
-                <div class="card p-3">
-                  <blockquote class="blockquote mb-0 card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">
-                      <small class="text-muted">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
-                      </small>
-                    </footer>
-                  </blockquote>
-                </div>
+<!-- Warren Buffet Quote of the Day -->
+<div class="card bg-primary text-white text-center p-3">
+    <h4 class="card-title">Quote Of The Day</h4>
+    <hr>
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer class="blockquote-footer">
+        <small>
+          Warren Buffett <cite title="Source Title">2012</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
 
-<!-- Placeholder -->
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/300x300" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+<!-- Stock Chart with Stock table -->
+<div class="card text-center">
+    <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Your Stocks</h4>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Stock</th>
+              <th scope="col">Price</th>
+              <th scope="col">% Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AAPL</th>
+              <td>$175.86</td>
+              <td>+3%</td>
+            </tr>
+            <tr>
+              <th scope="row">TSLA</th>
+              <td>$307.43</td>
+              <td>-2%</td>
+
+            </tr>
+            <tr>
+              <th scope="row">VFC</th>
+              <td>$69.36</td>
+              <td>+7%</td>
+            </tr>
+            <tr>
+                <th scope="row">NKE</th>
+                <td>$56.09</td>
+                <td>+2%</td>
+  
+              </tr>
+              <tr>
+                <th scope="row">GPRO</th>
+                <td>$8.06</td>
+                <td>-2%</td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
 
 
+<!-- Transaction History -->
 
-                <div class="card">
-                  <img class="card-img" src="https://placehold.it/300x300" alt="Card image">
-                </div>
-                <div class="card p-3 text-right">
-                  <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">
-                      <small class="text-muted">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
-                      </small>
-                    </footer>
-                  </blockquote>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+<div class="card text-center">
+    <!-- <img class="card-img-top" src="https://placehold.it/300x300" alt="Card image cap"> -->
+    <div class="card-body">
+      <h4 class="card-title">Transaction History</h4>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Stock</th>
+              <th scope="col">Shares</th>
+              <th scope="col">Selling Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AAPL</th>
+              <td>10</td>
+              <td>$171.98</td>
+            </tr>
+            <tr>
+              <th scope="row">TSLA</th>
+              <td>6</td>
+              <td>$307.43</td>
+
+            </tr>
+            <tr>
+              <th scope="row">VFC</th>
+              <td>2</td>
+              <td>$55.00</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+
+  <!-- People you follow -->
+
+<div class="card text-center">
+    <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Following</h4>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Avatar</th>
+              <th scope="col">Username</th>
+              <th scope="col">Wallet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="https://placehold.it/45x45" alt="avatar"></th>
+              <td>@BumbleBeeTuna</td>
+              <td>$7394.21</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="https://placehold.it/45x45" alt="avatar"></th>
+              <td>@OhWeeMohWeh</td>
+              <td>$3007.43</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="https://placehold.it/45x45" alt="avatar"></th>
+              <td>@AceVPD</td>
+              <td>$5523.00</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="https://placehold.it/45x45" alt="avatar"></th>
+                <td>@AllRightyThen</td>
+                <td>$7233.00</td>
+              </tr>
+              <tr>
+                  <th scope="row"><img src="https://placehold.it/45x45" alt="avatar"></th>
+                  <td>@MonopolyMan</td>
+                  <td>$9274.00</td>
+                </tr>
+          </tbody>
+        </table>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
               </div>
-            </div>
               
             </main>
-          </div>
-        </div>
+
 <!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
 	</script> 
