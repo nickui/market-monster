@@ -2,23 +2,26 @@
   "name": "market-monster",
   "version": "0.1.0",
   "private": true,
-
   "dependencies": {
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "body-parser": "^1.15.2",
+    "build-bundle": "^2.0.8",
+    "d3": "^4.11.0",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "jade": "^1.11.0",
-    "jquery": "^3.1.0",
+    "jquery": "^3.2.1",
     "lodash": "^4.15.0",
     "mongoose": "^4.6.0",
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-scripts": "^1.0.17",
     "request": "^2.74.0",
-    "socket.io": "^1.4.8"
+    "socket-io": "^1.0.0",
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -27,7 +30,8 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn run build; node server/index.js",
+    "react-dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
