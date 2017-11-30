@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>An Amazing Title</title>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+      <!--[if IE]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+  </head>
+  
+  <body id="home">
+  
+      <!-- Put HTML here -->
+      
+      <script>
+        var Quandl = require("quandl");
+        var quandl = new Quandl();
+        
+        var options = {
+            auth_token: "zyrYsZstgPbhDmNUupNy"
+        }
+        
+        quandl.configure(options);
+
+
+        var quandl = new Quandl({
+            auth_token: "zyrYsZstgPbhDmNUupNy",
+            api_version: 3
+        });
+        
+        quandl.dataset({
+            source: "WIKI",
+            table: "FB"
+        }, {
+            order: "asc",
+            exclude_column_names: true,
+            // Notice the YYYY-MM-DD format 
+            start_date: "2015-01-30",
+            end_date: "2016-01-29",
+            column_index: 4
+        }, function(err, response){
+            if(err)
+                throw err;
+        
+            console.log(response);
+        });
+
+      </script>
+  </body>
+  </html>
