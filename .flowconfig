@@ -1,11 +1,24 @@
 [ignore]
-.*/build
-.*/docs
-.*/node_modules
-.*/public
+.*/node_modules/animated/.*
+.*/node_modules/babel-plugin-transform-react-remove-prop-types/.*
+.*/node_modules/bcryptjs/.*
+.*/node_modules/expo/.*
+.*/node_modules/haul/.*
+.*/node_modules/metro-bundler/.*
+.*/node_modules/persistgraphql/.*
+.*/node_modules/react-aoollo/.*
+.*/node_modules/react-native-tab-view/.*
+.*/node_modules/react-navigation/.*
+.*/node_modules/react-native/.*
+.*/node_modules/react-native-web/.*
+.*/node_modules/redux-form/.*
+.*/node_modules/reqwest/.*
+.*/node_modules/styled-components/.*
+.*/node_modules/xdl/.*
 
 [include]
 
+[libs]
+
 [options]
-module.system.node.resolve_dirname=node_modules
-module.system.node.resolve_dirname=src
+unsafe.enable_getters_and_setters=true

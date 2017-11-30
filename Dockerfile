@@ -1,18 +1,16 @@
-FROM node:8.6.0-alpine
+FROM node:8.9-alpine
 
-# Set a working directory
-WORKDIR /usr/src/app
+MAINTAINER Victor Vlasenko <victor.vlasenko@sysgears.com>
 
-COPY ./build/package.json .
-COPY ./build/yarn.lock .
+RUN apk add --no-cache tini
 
-# Install Node.js dependencies
-RUN yarn install --production --no-progress
+ARG APP_DIR
 
-# Copy application files
-COPY ./build .
+RUN mkdir -p ${APP_DIR}/build && \
+    mkdir -p ${APP_DIR}/node_modules && \
+    mkdir -p /home/node/.cache/yarn && \
+    chown node:node -R ${APP_DIR} /home/node
 
-# Run the container under "node" user by default
 USER node
 
-CMD [ "node", "server.js" ]
+ENTRYPOINT ["/sbin/tini", "--"]

@@ -1,80 +1,67 @@
-## Contributing to React Starter Kit
+# Contribute
 
-React Starter Kit is currently the most widely adopted Node.js/React boilerplate
-used by many tech startups around the globe. We're working hard to keep it up to
-date, making sure that it follows best practices and high coding standards,
-paying extremely close attention to details.
+## Introduction
 
-Your contributions are welcome and are greatly appreciated! Every little bit
-helps, and credit will always be given.
+First, thank you for considering contributing to apollo-universal-starter-kit! It's people like you that make the open source community such a great community! 😊
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+We welcome any type of contribution, not only code. You can help with 
+- **QA**: file bug reports, the more details you can give the better (e.g. screenshots with the console open)
+- **Marketing**: writing blog posts, howto's, printing stickers, ...
+- **Community**: presenting the project at meetups, organizing a dedicated meetup for the local community, ...
+- **Code**: take a look at the [open issues](issues). Even if you can't write code, commenting on them, showing that you care about a given issue matters. It helps us triage them.
+- **Money**: we welcome financial contributions in full transparency on our [open collective](https://opencollective.com/apollo-universal-starter-kit).
 
-### Conduct
+## Your First Contribution
 
-Please, follow the [golden rule](https://en.wikipedia.org/wiki/Golden_Rule). Be
-respectful, even to those that are disrespectful.
+Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
-### Feedback
+## Submitting code
 
-Feedback is the breakfast for champions! We'd love to hear your opinions,
-discuss potential improvements, architecture, theory, internal implementation,
-etc. Please, join or start a new conversation in our
-[issue tracker](https://github.com/kriasoft/react-starter-kit/issues),
-[Gitter](https://gitter.im/kriasoft/react-starter-kit) chat room, or let's talk
-face-to-face on [Appear.in](https://appear.in/react) or
-[Skype](http://hatscripts.com/addskype?koistya).
+Any code change should be submitted as a pull request. The description should explain what the code does and give steps to execute it. The pull request should also contain tests.
 
-### Documentation
+## Code review process
 
-We need your help with improving documentation to the project. This might be the
-easiest way for you to contribute, because you don't even need to clone the repo
-but can edit or create new `.md` files right from GitHub website as described
-[here](https://help.github.com/articles/editing-files-in-your-repository/).
+The bigger the pull request, the longer it will take to review and merge. Try to break down large pull requests in smaller chunks that are easier to review and merge.
+It is also always helpful to have some context for your pull request. What was the purpose? Why does it matter to you?
 
-### Bugs & Feature Requests
+## Financial contributions
 
-Before opening an issue, please:
+We also welcome financial contributions in full transparency on our [open collective](https://opencollective.com/apollo-universal-starter-kit).
+Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
 
-* Check the
-  [Getting Started](https://github.com/kriasoft/react-starter-kit/blob/master/docs/getting-started.md)
-  guide.
-* Search the
-  [issue tracker](https://github.com/kriasoft/react-starter-kit/issues) to make
-  sure your issue hasn’t already been reported.
-* If your issue sounds more like a question, please post it on StackOverflow.com
-  instead with the tag
-  [react-starter-kit](http://stackoverflow.com/questions/tagged/react-starter-kit).
+## Questions
 
-### Pull Requests
+If you have any questions, create an [issue](issue) (protip: do a quick search first to see if someone else didn't ask the same question before!).
+You can also reach us at hello@apollo-universal-starter-kit.opencollective.com.
 
-Before you submit a
-[pull request](https://help.github.com/articles/using-pull-requests/) from your
-forked repo, check that it meets these guidelines:
+## Credits
 
-* If the pull request adds functionality, the docs should be updated as part of
-  the same PR.
-* Create a separate PR for each small feature or bug fix.
-* [Squash](http://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git)
-  your commits into one for each PR.
-* Run `yarn test` to make sure that your code style is OK and there are no any
-  regression bugs.
-* When contributing to an opt-in feature, apply the `[feature/...]` tag as a
-  prefix to your PR title
+### Contributors
 
-#### Style Guide
+Thank you to all the people who have already contributed to apollo-universal-starter-kit!
+<a href="graphs/contributors"><img src="https://opencollective.com/apollo-universal-starter-kit/contributors.svg?width=890" /></a>
 
-Our linter will catch most styling issues that may exist in your code. You can
-check the status of your code styling by simply running: `yarn lint`
 
-However, there are still some styles that the linter cannot pick up. If you are
-unsure about something, looking at
-[Airbnb's Style Guide](https://github.com/airbnb/javascript) will guide you in
-the right direction.
+### Backers
 
-### License
+Thank you to all our backers! [[Become a backer](https://opencollective.com/apollo-universal-starter-kit#backer)]
 
-By contributing to React Starter Kit, you agree that your contributions will be
-licensed under its
-[MIT license](https://github.com/kriasoft/react-starter-kit/blob/master/LICENSE.txt).
+<a href="https://opencollective.com/apollo-universal-starter-kit#backers" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/backers.svg?width=890"></a>
+
+
+### Sponsors
+
+Thank you to all our sponsors! (please ask your company to also support this open source project by [becoming a sponsor](https://opencollective.com/apollo-universal-starter-kit#sponsor))
+
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/0/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/1/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/2/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/3/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/4/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/5/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/6/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/7/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/8/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/apollo-universal-starter-kit/sponsor/9/website" target="_blank"><img src="https://opencollective.com/apollo-universal-starter-kit/sponsor/9/avatar.svg"></a>
+
+<!-- This `CONTRIBUTING.md` is based on @nayafia's template https://github.com/nayafia/contributing-template -->
