@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Market Monster</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CSS formatting to lower Jumbotron below Nav Bar - will remove once CSS page built -->
+    <style> 
+        body {
+          padding-top: 50px;
+        }
+        
+        /*
+         * Typography
+         */
+        
+        h1 {
+          margin-bottom: 20px;
+          padding-bottom: 9px;
+          border-bottom: 1px solid #eee;
+        }
+        
+        /*
+         * Sidebar
+         */
+        
+        .sidebar {
+          position: fixed;
+          top: 51px;
+          bottom: 0;
+          left: 0;
+          z-index: 1000;
+          padding: 20px;
+          overflow-x: hidden;
+          overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+          border-right: 1px solid #eee;
+        }
+        
+        /* Sidebar navigation */
+        .sidebar {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        
+        .sidebar .nav {
+          margin-bottom: 20px;
+        }
+        
+        .sidebar .nav-item {
+          width: 100%;
+        }
+        
+        .sidebar .nav-item + .nav-item {
+          margin-left: 0;
+        }
+        
+        .sidebar .nav-link {
+          border-radius: 0;
+        }
+        
+        /*
+         * Dashboard
+         */
+        
+         /* Placeholders */
+        .placeholders {
+          padding-bottom: 3rem;
+        }
+        
+        .placeholder img {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+        
+
+
+      </style>
+
+	<!-- Navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Market Monster</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Guest</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Sign Up</a>
+				</li>
+			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button">Log In</button>
+		</div>
+	</nav><!-- Jumbotron -->
+  
+  <!-- Dashboard -->
+  
+      <div class="container-fluid">
+          <div class="row">
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Analytics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Export</a>
+                </li>
+              </ul>
+    
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav item</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav item again</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">One more nav</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Another nav item</a>
+                </li>
+              </ul>
+    
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nav item again</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">One more nav</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Another nav item</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    
+
+<!-- Dashboard -->
+
+            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+                <h1 class="display-3 align-center"><img src="https://placehold.it/80x80" alt="user-image"> Hello, Monster!</h1>
+                <br><br>
+              <div class="card-columns">
+
+<!-- Stock Chart with Stock table -->
+                <div class="card">
+                  <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Your Stocks</h4>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">% Change</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">AAPL</th>
+                            <td>$175.86</td>
+                            <td>+3%</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">TSLA</th>
+                            <td>$307.43</td>
+                            <td>-2%</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">VFC</th>
+                            <td>$69.36</td>
+                            <td>+7%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+
+<!-- League Scores -->
+<div class="card text-center">
+    <div class="card-body">
+      <h4 class="card-title">Monster League</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Username</th>
+              <th scope="col">$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>@Maike</td>
+              <td>$3,000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@Nick</td>
+              <td>$2700</td>
+
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>@Nathan</td>
+              <td>$2000</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+<!-- Warren Buffet Quote of the Day -->
+<div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer class="blockquote-footer">
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+
+<!-- Plavceholder -->
+                <div class="card p-3">
+                  <blockquote class="blockquote mb-0 card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                      <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                      </small>
+                    </footer>
+                  </blockquote>
+                </div>
+
+<!-- Placeholder -->
+                <div class="card">
+                  <img class="card-img-top" src="https://placehold.it/300x300" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <img class="card-img" src="https://placehold.it/300x300" alt="Card image">
+                </div>
+                <div class="card p-3 text-right">
+                  <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                      <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                      </small>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            </main>
+          </div>
+        </div>
+<!-- JS Links -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
