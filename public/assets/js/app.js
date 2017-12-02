@@ -16,10 +16,10 @@ function getStockData() {
         console.log("Company Name: " + res.data.companyName); // store this
         console.log("Stock Ticker: " + res.data.symbol); // store this
         console.log("Sector: " + res.data.sector); // store this
-        console.log("Open Price: " + res.data.latestPrice); // store this
+        console.log("Latest Price: " + res.data.latestPrice); // store this (current price)
         console.log("Open Price: " + res.data.open); 
         console.log("Close Price: " + res.data.close); 
         console.log("Date: " + res.data.latestTime);
-        console.log("Epoc Date: " + res.data.latestUpdate); // store this
+        console.log("Epoc Date: " + res.data.latestUpdate); // store this (buy date)
     });
 }
