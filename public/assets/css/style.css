@@ -1,0 +1,7 @@
+body {
+  min-height: 75rem;
+  padding-top: 3.5rem;
+    background: #8cffe6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
+  }
