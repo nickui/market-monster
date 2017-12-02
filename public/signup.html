@@ -11,7 +11,7 @@
 <body>
 
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="home.html">Market Monster</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -24,7 +24,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="./signup.html">Sign Up</a>
             </li>
-          </ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button"><a href="./login.html">Log In</a></button>
+          </ul><button class="btn btn-dark my-2 my-sm-0" type="button"><a href="./login.html">Log In</a></button>
         </div>
       </nav>
 
@@ -35,7 +35,7 @@
 
 
     
-    <div class="container">
+    <div class="container signup-container">
 	<div class="row">
 		<div class="col-md-12 login-sec">
 		    <h2 class="text-center">Sign Up Now</h2>
@@ -67,7 +67,12 @@
 
     <div class="form-group">
         <label for="exampleInputEmail1" class="text-uppercase">Gender</label>
-        <input type="text" class="form-control" placeholder="">
+        <br>
+        <form>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </form>
       </div>
 
       <div class="form-group">
@@ -82,7 +87,11 @@
 
           <div class="form-group">
               <label for="exampleInputEmail1" class="text-uppercase">Private or Public Profile</label>
-              <input type="text" class="form-control" placeholder="">
+              <br>
+              <form>
+                <input type="radio" name="profile-type" value="private" checked> Private<br>
+                <input type="radio" name="profile-type" value="public"> Public<br>
+              </form>
             </div>
   
   <div class="container">
