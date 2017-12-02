@@ -6,96 +6,26 @@
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Market Monster</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
 </head>
 <body>
 
-  <!-- CSS formatting to lower Jumbotron below Nav Bar - will remove once CSS page built -->
-    <style> 
-        body {
-          padding-top: 50px;
-        }
-        
-        /*
-         * Typography
-         */
-        
-        h1 {
-          margin-bottom: 20px;
-          padding-bottom: 9px;
-          border-bottom: 1px solid #eee;
-        }
-        
-        /*
-         * Sidebar
-         */
-        
-        .sidebar {
-          position: fixed;
-          top: 51px;
-          bottom: 0;
-          left: 0;
-          z-index: 1000;
-          padding: 20px;
-          overflow-x: hidden;
-          overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-          border-right: 1px solid #eee;
-        }
-        
-        /* Sidebar navigation */
-        .sidebar {
-          padding-left: 0;
-          padding-right: 0;
-        }
-        
-        .sidebar .nav {
-          margin-bottom: 20px;
-        }
-        
-        .sidebar .nav-item {
-          width: 100%;
-        }
-        
-        .sidebar .nav-item + .nav-item {
-          margin-left: 0;
-        }
-        
-        .sidebar .nav-link {
-          border-radius: 0;
-        }
-        
-        /*
-         * Dashboard
-         */
-        
-         /* Placeholders */
-        .placeholders {
-          padding-bottom: 3rem;
-        }
-        
-        .placeholder img {
-          padding-top: 1.5rem;
-          padding-bottom: 1.5rem;
-        }
-        
-
-
-      </style>
-
+ 
 	<!-- Navbar -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Market Monster</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+		<a class="navbar-brand" href="home.html">Market Monster</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="./about.html">About</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Guest</a>
+					<a class="nav-link" href="./dashboard.html">Guest</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Sign Up</a>
+					<a class="nav-link" href="./signup.html">Sign Up</a>
 				</li>
-			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button">Log In</button>
+			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button"><a href="./login.html">Log In</a></button>
 		</div>
 	</nav><!-- Jumbotron -->
   
@@ -118,7 +48,7 @@
                   <a class="nav-link" href="#">Export</a>
                 </li>
               </ul>
-    
+<!--     
               <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Nav item</a>
@@ -144,7 +74,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Another nav item</a>
                 </li>
-              </ul>
+              </ul> -->
             </nav>
         </div>
       </div>
