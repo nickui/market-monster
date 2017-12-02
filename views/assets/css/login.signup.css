@@ -1,6 +1,6 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
-* {
+body {
     background: #8cffe6;
 }
 
@@ -28,3 +28,29 @@
 .banner-text h2{color:#fff; font-weight:600;}
 .banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
 .banner-text p{color:#fff;}
+
+
+
+/* Sign Up Page */
+/* layout.css Style */
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }
+  
+  /* skin.css Style*/
+  .upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+  }
+  .upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+  }
+
+  .login-sec h4{margin-bottom:30px; font-weight:800; font-size:30px; color: #00a2ff;}
+  .login-sec h4:after{content:" "; width:100px; height:5px; background:#8cffe6; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
