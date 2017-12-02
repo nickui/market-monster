@@ -87,11 +87,20 @@
                 <br><br>
               <div class="card-columns">
 
-<!-- Stock Chart with Stock table -->
+<!-- Research Stocks  -->
                 <div class="card">
                   <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
                   <div class="card-body">
-                    <h4 class="card-title">Your Stocks</h4>
+                    <h4 class="card-title">Buy Stocks</h4>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <label for="ticker">Stock Ticker:</label>
+                        <input type="text" class="form-control" placeholder="Search&hellip;" id="ticker">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" onclick="getStockData();">Go</button>
+                        </span>
+                    </div>
+                    </div>
                     <table class="table">
                         <thead>
                           <tr>
@@ -102,25 +111,51 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">AAPL</th>
-                            <td>$175.86</td>
-                            <td>+3%</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">TSLA</th>
-                            <td>$307.43</td>
-                            <td>-2%</td>
-
-                          </tr>
-                          <tr>
-                            <th scope="row">VFC</th>
-                            <td>$69.36</td>
-                            <td>+7%</td>
                           </tr>
                         </tbody>
                       </table>
                   </div>
                 </div>
+
+<!-- Stock Chart with Stock table -->
+<div class="card">
+    <img class="card-img-top" src="https://placehold.it/200x100" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Your Stocks</h4>
+      <div class="form-group">
+        <div class="input-group">
+      </div>
+      </div>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Stock</th>
+              <th scope="col">Price</th>
+              <th scope="col">% Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AAPL</th>
+              <td>$175.86</td>
+              <td>+3%</td>
+            </tr>
+            <tr>
+              <th scope="row">TSLA</th>
+              <td>$307.43</td>
+              <td>-2%</td>
+
+            </tr>
+            <tr>
+              <th scope="row">VFC</th>
+              <td>$69.36</td>
+              <td>+7%</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
 
 <!-- League Scores -->
 <div class="card text-center">
@@ -225,6 +260,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
-	</script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
