@@ -35,11 +35,11 @@ app.use(passport.session()); // persistent login sessions
 // });
 
 //Models
-var models = require("./app/models");
+var models = require("./models");
 
 //Routes
-var routes = require("./app/routes/routes.js");
-var authRoute = require('./app/routes/auth.js')(app, passport);
+var routes = require("./routes/routes.js");
+var authRoute = require('./routes/auth.js')(app, passport);
 
 // initialize routes
 app.use("/", routes);
