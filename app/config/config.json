@@ -1,0 +1,24 @@
+{
+    "development": {
+        "username": "root",
+        "password": "test",
+        "database": "passport_db",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "",
+        "password": null,
+        "database": "",
+        "host": "",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "",
+        "password": null,
+        "database": "",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
+
+   }
