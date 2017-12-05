@@ -13,6 +13,7 @@ module.exports = function(app, passport) {
         successRedirect: '/dashboard',
         failureRedirect: '/signin'
     }));
+    app.get('/logout', authController.logout);
         
     // to protect route
     function isLoggedIn(req, res, next) {

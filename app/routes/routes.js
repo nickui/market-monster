@@ -16,20 +16,28 @@ router.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/about.html"));
 });
 
-router.get("*", function(req, res) {
-    res.redirect("/");
+
+// CSS routes
+router.get("/style", function(req, res) {
+    res.sendFile(path.join(__dirname, '/../public/assets/css/style.css'));
 });
 
-// // non-auth related routes
-// app.get("/about", authController.about);
-// app.get("*", authController.default);
+router.get("/logincss", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/assets/css/login.signup.css"));
+});
 
-// // not auth routes
-// exports.about = function(req, res) {
-// res.sendFile(path.join(__dirname, "/../public/about.html"));
-// };
-// exports.default = function(req, res) {
-// res.redirect("/");
-// };
+router.get("/dasboardcss", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/assets/css/dashboard.css"));
+});
+
+// JS routes
+router.get("/appjs", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/assets/js/app.js"));
+});
+
+router.get("/singupjs", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/assets/js/signup.js"));
+});
+
 
 module.exports = router;

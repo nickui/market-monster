@@ -5,101 +5,103 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Market Monster</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel=
-	"stylesheet">
-	<link href="./assets/css/login.signup.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="logincss" type="text/css">
 </head>
 <body>
+
+  <!-- Navbar -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/">Market Monster</a> <button aria-controls=
-		"navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class=
-		"navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type=
-		"button"><span class="navbar-toggler-icon"></span></button>
-		<div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="/about">About</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="/">Guest</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="/signup">Sign Up</a>
-				</li>
-			</ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button"><a href="/signin">Log
-			In</a></button>
-		</div>
+    <a class="navbar-brand" href="/">Market Monster</a> <button aria-controls=
+    "navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class=
+    "navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type=
+    "button"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard">Guest</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/signup">Sign Up</a>
+        </li>
+      </ul><a class="btn btn-outline-primary my-2 my-sm-0" href="/signin">Log In</a>
+    </div>
   </nav>
-  
+
   <!-- Login Screen -->
-	<section class="login-block">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 login-sec">
-					<h2 class="text-center">Login Now</h2>
-					<form action="/signin" class="login-form" id="signin" method="post" name="signin">
-						<div class="form-group">
-							<label class="text-uppercase" for="email">Email Address</label> <input class="form-control"
-							name="email" placeholder="" type="text">
-						</div>
-						<div class="form-group">
-							<label class="text-uppercase" for="password">Password</label> <input class="form-control"
-							name="password" placeholder="" type="password">
-						</div>
-						<div class="form-check">
-							<label class="form-check-label"><input class="form-check-input" type="checkbox">
-							<small>Remember Me</small></label> <input class="btn btn-login float-right" type="submit"
-							value="Submit">
-						</div>
-					</form>
-				</div>
-				<div class="col-md-8 banner-sec">
-					<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
-						<ol class="carousel-indicators">
-							<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
-							<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
-							<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
-						</ol>
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active">
-								<img alt="First slide" class="d-block img-fluid" src="https://placehold.it/900x600">
-								<div class="carousel-caption d-none d-md-block">
-									<div class="banner-text">
-										<h2>Monster Stocks</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-										exercitation</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img alt="First slide" class="d-block img-fluid" src="https://placehold.it/900x600">
-								<div class="carousel-caption d-none d-md-block">
-									<div class="banner-text">
-										<h2>Monster Stocks</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-										exercitation</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img alt="First slide" class="d-block img-fluid" src="https://placehold.it/900x600">
-								<div class="carousel-caption d-none d-md-block">
-									<div class="banner-text">
-										<h2>Monster Stocks</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-										exercitation</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!-- JS Links -->
+  <section class="login-block">
+    <div class="container">
+	    <div class="row">
+		    <div class="col-md-4 login-sec">
+		      <h2 class="text-center">Login Now</h2>
+          
+          <form class="login-form" id="signin" name="signin" method="post" action="/signin">
+            <div class="form-group">
+              <label for="email" class="text-uppercase">Email Address</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="">
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="text-uppercase">Password</label>
+              <input type="password" name="password" id="password" class="form-control" placeholder="">
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                <small>Remember Me</small>
+              </label>
+              <input class="btn btn-login float-right" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+    
+		    <div class="col-md-8 banner-sec">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://placehold.it/900x600" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="banner-text">
+                    <h2>Monster Stocks</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                  </div>	
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://placehold.it/900x600" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="banner-text">
+                    <h2>Monster Stocks</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                  </div>	
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://placehold.it/900x600" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="banner-text">
+                    <h2>Monster Stocks</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                  </div>	
+                </div>
+              </div>
+            </div>	   
+          </div>
+	      </div>
+      </div>
+    </div> 
+  </section>
+ 
+  <!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
