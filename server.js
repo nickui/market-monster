@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(session( { 
     secret: 'keyboard cat',
     resave: true, 
-    saveUninitialized:true
+    saveUninitialized: true
 })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
@@ -44,9 +44,9 @@ require('./app/config/passport/passport.js')(passport, models.user);
 
 //Sync Database
 models.sequelize.sync().then(function() {
-    console.log('Nice! Database looks fine')
+    console.log('Database syncing')
 }).catch(function(err) {
-    console.log(err, "Something went wrong with the Database Update!")
+    console.log(err, "Database not syncing")
 });
 
 // start server
