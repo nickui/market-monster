@@ -26,7 +26,7 @@ router.get("/logincss", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/assets/css/login.signup.css"));
 });
 
-router.get("/dasboardcss", function(req, res) {
+router.get("/dashboardcss", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/assets/css/dashboard.css"));
 });
 
