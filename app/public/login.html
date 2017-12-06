@@ -6,24 +6,28 @@
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Market Monster</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/login.signup.css">
+  <link rel="stylesheet" href="logincss" type="text/css">
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Market Monster</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+  <!-- Navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Market Monster</a> <button aria-controls=
+    "navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class=
+    "navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type=
+    "button"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/">Guest</a>
+          <a class="nav-link" href="/dashboard">Guest</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="/signup">Sign Up</a>
         </li>
-      </ul><button class="btn btn-outline-primary my-2 my-sm-0" type="button"><a href="/signin">Log In</a></button>
+      </ul><a class="btn btn-outline-primary my-2 my-sm-0" href="/signin">Log In</a>
     </div>
   </nav>
 
@@ -37,12 +41,12 @@
           <form class="login-form" id="signin" name="signin" method="post" action="/signin">
             <div class="form-group">
               <label for="email" class="text-uppercase">Email Address</label>
-              <input type="text" name="email" class="form-control" placeholder="">
+              <input type="text" name="email" id="email" class="form-control" placeholder="">
             </div>
 
             <div class="form-group">
               <label for="password" class="text-uppercase">Password</label>
-              <input type="password" name="password" class="form-control" placeholder="">
+              <input type="password" name="password" id="password" class="form-control" placeholder="">
             </div>
 
             <div class="form-check">

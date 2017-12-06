@@ -1,8 +1,3 @@
-// create express connection and run node server
-var express = require("express");
-var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
-var handlebars = require("express-handlebars");
 // https://code.tutsplus.com/tutorials/using-passport-with-sequelize-and-mysql--cms-27537
 // assigns express module to express
 var express = require('express');
