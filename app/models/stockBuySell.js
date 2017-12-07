@@ -13,7 +13,7 @@ module.exports = function(sequelize, Sequelize) {
                 notEmpty: true
             },
             companyName: {
-                type: Sequelize.INTEGER,
+                type: Sequelize.STRING,
                 notEmpty: true
             },
             stockTicker: {
@@ -21,13 +21,13 @@ module.exports = function(sequelize, Sequelize) {
                 notEmpty: true
             },
             sector: {
-                type: Sequelize.INTEGER,
+                type: Sequelize.STRING,
                 notEmpty: true
             },
             epocDate: {
                 type: Sequelize.INTEGER,
             },
-            purchaesPrice: {
+            purchasePrice: {
                 type: Sequelize.FLOAT,
                 notEmpty: true
             },

@@ -35,6 +35,7 @@ var models = require("./app/models");
 //Routes
 var routes = require("./app/routes/routes.js");
 var authRoute = require('./app/routes/auth.js')(app, passport);
+var apiRoutes = require("./app/routes/apiRoutes.js")(app);
 
 // initialize routes
 app.use("/", routes);

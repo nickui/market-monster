@@ -40,12 +40,20 @@ function getStockData() {
         row.appendChild(buyButtonCell);
         var tBody = document.querySelector("#buyStock > tbody");
         tBody.appendChild(row);
-
+        document.getElementById('ticker').value = "";
     })
     .catch(function (error) {
         console.log("Stock Not Found!");
     });
 }
+
+// allow enter key to submit the ticker field
+document.querySelector("#ticker").addEventListener("keyup", function(event) {
+    if(event.key !== "Enter") return;
+    document.querySelector("#tickerBTN").click(); 
+    event.preventDefault(); 
+});
+
 function buyStock(currentStockTicker, currentStockPrice, currentStockBuyDate) {
     // make sure bank account can afford it
     if (user.bankBalance > currentStockPrice) {
@@ -54,12 +62,15 @@ function buyStock(currentStockTicker, currentStockPrice, currentStockBuyDate) {
         // user.stocks (each stock has a ticker, price, currentStockBuyDate, quantity)
         var stock = {
             ticker: currentStockTicker,
+            companyName: companyName,
+            // sector: currentSector,
             price: currentStockPrice,
-            buyDate: currentStockBuyDate,
+            epocDate: currentStockBuyDate,
             quantity: 1
         }
         // add new record to users.stocksPurchases
         user.stockBuys.push(stock);
+        $.post("/api/buy", user);
     }
     else{
         console.log("You poor!")
