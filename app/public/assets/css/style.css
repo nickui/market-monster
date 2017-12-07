@@ -19,3 +19,11 @@ body {
 .navbar a {
   color: #8cffe6 !important;
 }
+
+.home-card {
+  text-align: center;
+}
+
+.about-sections {
+  padding-top: 5%;
+}
