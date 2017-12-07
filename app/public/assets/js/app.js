@@ -65,3 +65,4 @@ function buyStock(currentStockTicker, currentStockPrice, currentStockBuyDate) {
         console.log("You poor!")
     };
 }
+

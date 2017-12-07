@@ -1,6 +1,21 @@
 body {
-    padding-top: 50px;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    padding-top: 3.9%;
     background: #8cffe6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
   }
+
+.jumbo-formatting {
+  padding: 10%; 
+  }
+
+.bg-dark{
+
+    background: rgba(3, 112, 255, 0.596) !important;
+}
+
+.navbar a {
+  color: #8cffe6 !important;
+}
