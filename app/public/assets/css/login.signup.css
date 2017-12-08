@@ -13,8 +13,10 @@ body {
     height: 100%;
     padding : 150px 0;
 }
-/* .banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;} */
-.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.banner-sec{background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.signup-container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.login-container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.upload-container{background:#fff; border-radius: 10px; }
 .carousel-inner{border-radius:0 10px 10px 0;}
 .carousel-caption{text-align:left; left:5%;}
 .login-sec{padding: 50px 30px; position:relative;}
@@ -54,3 +56,13 @@ body {
 
   .login-sec h4{margin-bottom:30px; font-weight:800; font-size:30px; color: #00a2ff;}
   .login-sec h4:after{content:" "; width:100px; height:5px; background:#8cffe6; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+
+  .bg-dark{
+    
+        background: rgba(3, 112, 255, 0.596) !important;
+    }
+    
+    .navbar a {
+      color: #8cffe6 !important;
+    }
+    
