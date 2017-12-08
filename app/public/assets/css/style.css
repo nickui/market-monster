@@ -1,10 +1,29 @@
 body {
     min-height: 75rem;
-    padding-top: 4.5rem;
     padding-top: 3.9%;
     background: #8cffe6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
+  }
+
+.main-text {
+      position: absolute;
+      padding: 2% 0 ;
+      top: 50%;
+      left: 25%;
+      width: 96.7%;
+      color: #FFF;
+      background: rgba(6, 109, 194, 0.651);
+      box-shadow: 10px 10px #8cffe47a;
+      width: 50%;
+  }
+
+  .main-headline {
+    font-size: 3.5em !important;
+  }
+
+  .sub-headline {
+    font-kerning: 2em;
   }
 
 .jumbo-formatting {
