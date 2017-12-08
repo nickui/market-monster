@@ -102,6 +102,11 @@ body {
 .banner-text p {
 	color: #fff;
 }
+
+.carousel-text {
+  background: rgba(6, 109, 194, 0.651);
+  box-shadow: 10px 10px #8cffe47a;
+}
 /* Sign Up Page */
 
 /* layout.css Style */

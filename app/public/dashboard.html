@@ -37,61 +37,60 @@
 		<div class="row">
 			<nav class="col-sm-3 col-md-2 hidden-xs hidden-sm bg-faded sidebar">
 				<ul class="nav nav-pills flex-column">
+						<li class="nav-item">
+								<a class="nav-link" href="#wallet">Wallet</a>
+							</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#buy-stocks">Buy Stocks <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Reports</a>
+						<a class="nav-link" href="#your-stocks">Your Stocks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Analytics</a>
+						<a class="nav-link" href="#qotd">Quote of the Day</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Export</a>
+						<a class="nav-link" href="#fatd">Fact of the Day</a>
 					</li>
-				</ul><!--     
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
-                </li>
-              </ul>
-    
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
-                </li>
-              </ul> -->
+					<li class="nav-item">
+							<a class="nav-link" href="#league">League</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">Placeholder</a>
+						</li>
+				</ul>
 			</nav>
 		</div>
   </div>
   
   <!-- Dashboard -->
 	<main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-		<h1 class="display-3 align-center"><img alt="user-image" src="https://placehold.it/80x80"> Hello,
+		<h1 class="display-3 align-center"><img alt="user-image" src="assets/img/avatar.jpg" width="10%"> Hello,
 		Monster!</h1><br>
 		<br>
 		<div class="card-columns">
       
-      <!-- Research Stocks  -->
+			<!-- Research Stocks  -->
 			<div class="card">
-				<img alt="Card image cap" class="card-img-top" src="https://placehold.it/200x100">
+					<div class="card-body">
+						<h4 class="card-title" id="wallet">Wallet</h4>
+						<table class="table" id="wallet-data">
+								<thead>
+									<tr>
+										<th scope="col">Cash</th>
+										<th scope="col">+ / -</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+			<div class="card">
+				<img alt="Card image cap" class="card-img-top" src="assets/img/stocks-2.jpg">
 				<div class="card-body">
-					<h4 class="card-title">Buy Stocks</h4>
+					<h4 class="card-title" id="buy-stocks">Buy Stocks</h4>
 					<div class="form-group">
 						<div class="input-group">
 							<label for="ticker">Stock Ticker:</label> <input class="form-control" id="ticker"
@@ -112,12 +111,23 @@
 					</table>
 				</div>
       </div>
-      
+			
+			
+			      <!-- Fact of the Day -->
+						<div class="card p-3">
+								<blockquote class="blockquote mb-0 card-body"  id="fotd">
+									<p>This is the really really interesting fact of the day.</p>
+									<footer class="blockquote-footer">
+										<small class="text-muted">Someone famous in <cite title="Source Title">Source
+										Title</cite></small>
+									</footer>
+								</blockquote>
+							</div>
       <!-- Stock Chart with Stock table -->
 			<div class="card">
-				<img alt="Card image cap" class="card-img-top" src="https://placehold.it/200x100">
+				<img alt="Card image cap" class="card-img-top" src="assets/img/stocks.jpg">
 				<div class="card-body">
-					<h4 class="card-title">Your Stocks</h4>
+					<h4 class="card-title" id="your-stocks">Your Stocks</h4>
 					<div class="form-group">
 						<div class="input-group"></div>
 					</div>
@@ -149,11 +159,12 @@
 					</table>
 				</div>
       </div>
-      
+			
+
       <!-- League Scores -->
 			<div class="card text-center">
 				<div class="card-body">
-					<h4 class="card-title">Monster League</h4>
+					<h4 class="card-title"  id="league">Monster League</h4>
 					<table class="table">
 						<thead>
 							<tr>
@@ -185,7 +196,7 @@
       </div>
       
       <!-- Warren Buffet Quote of the Day -->
-			<div class="card bg-primary text-white text-center p-3">
+			<div class="card bg-primary text-white text-center p-3" id="qotd">
 				<blockquote class="blockquote mb-0">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
 					<footer class="blockquote-footer">
@@ -193,17 +204,7 @@
 					</footer>
 				</blockquote>
       </div>
-      
-      <!-- Plavceholder -->
-			<div class="card p-3">
-				<blockquote class="blockquote mb-0 card-body">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<footer class="blockquote-footer">
-						<small class="text-muted">Someone famous in <cite title="Source Title">Source
-						Title</cite></small>
-					</footer>
-				</blockquote>
-      </div>
+    
       
       <!-- Placeholder -->
 			<div class="card">
@@ -225,15 +226,6 @@
 						Title</cite></small>
 					</footer>
 				</blockquote>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-					additional content. This card has even longer content than the first to show that equal height
-					action.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-				</div>
 			</div>
 		</div>
   </main>
