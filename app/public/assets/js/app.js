@@ -43,6 +43,23 @@ var config = {
           var tBody = document.querySelector("#buyStock > tbody");
           tBody.appendChild(row);
           document.getElementById('ticker').value = "";
+          
+          // adding to yourStock card
+          var companyNameCellYS = document.createElement("td");
+          companyNameCellYS.innerHTML = res.data.companyName; 
+          var stockPriceCellYS = document.createElement("td");
+          stockPriceCellYS.innerHTML = "$" + res.data.latestPrice; 
+          var sellButtonCell = document.createElement("td");
+          // sellStock('APPL', 1.23, 1234553);
+          sellButtonCell.innerHTML = '<button type="button" class="btn btn-danger" onclick="sellStock(\'' + res.data.symbol + '\', ' + res.data.latestPrice + ', ' + res.data.latestUpdate + ');">Sell</button>';
+          var row = document.createElement("tr");
+          row.className = "d-none";
+          row.id = res.data.symbol;
+          row.appendChild(companyNameCellYS);
+          row.appendChild(stockPriceCellYS);
+          row.appendChild(sellButtonCell);
+          var tBody = document.querySelector("#yourStock > tbody");
+          tBody.appendChild(row);
       })
       .catch(function (error) {
           console.log("Stock Not Found!");
@@ -76,6 +93,9 @@ var config = {
 
           // update bank balance
           document.getElementById('wallet-amount').innerHTML = "$" + user.bankBalance;
+
+          // unhide recently purchased stocks to mystock card
+          document.getElementById(currentStockTicker).classList.remove("d-none");
       }
       else{
           console.log("You poor!")
