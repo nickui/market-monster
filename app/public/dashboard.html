@@ -5,6 +5,7 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Market Monster</title>
+	<link rel="stylesheet" href="assets/css/easy-autocomplete.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel=
 	"stylesheet">
 	<link href="/dashboardcss" rel="stylesheet" type="text/css">
@@ -93,7 +94,7 @@
 					<div class="form-group">
 						<div class="input-group">
 							<input class="form-control" id="ticker" placeholder="Search Stock Ticker" type="text" name="ticker"> 
-									<button class="btn btn-lg btn-primary" onclick="getStockData();" type="button" id="tickerBTN">Go
+									<button class="btn btn-md btn-primary" onclick="getStockData();" type="button" id="tickerBTN">Go
 										<!-- <span class="input-group-btn">Go</span> -->
 									</button>
 						</div>
@@ -130,30 +131,15 @@
 					<div class="form-group">
 						<div class="input-group"></div>
 					</div>
-					<table class="table">
+					<table class="table" id="yourStock">
 						<thead>
 							<tr>
 								<th scope="col">Stock</th>
 								<th scope="col">Price</th>
-								<th scope="col">% Change</th>
+								<th scope="col">Sell</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<th scope="row">AAPL</th>
-								<td>$175.86</td>
-								<td>+3%</td>
-							</tr>
-							<tr>
-								<th scope="row">TSLA</th>
-								<td>$307.43</td>
-								<td>-2%</td>
-							</tr>
-							<tr>
-								<th scope="row">VFC</th>
-								<td>$69.36</td>
-								<td>+7%</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -232,6 +218,8 @@
   <!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	</script> 
+	<script src="assets/js/jquery.easy-autocomplete.min.js">
+	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
@@ -239,6 +227,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js">
 	</script> 
 	<script src="/appjs">
+	</script>
+	<script src="assets/js/auto.js">
 	</script>
 </body>
 </html>
