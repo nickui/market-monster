@@ -54,7 +54,7 @@ models.sequelize.sync().then(function() {
 });
 
 // start server
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function(err) {
     if (!err) {
         console.log("Listening on port", port);
