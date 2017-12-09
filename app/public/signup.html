@@ -127,14 +127,17 @@
 								<h4 class="text-center">Upload Image</h4>
 								<div class="panel-body">
 									<!-- Standard Form -->
-
-
-										<div class="form-group align-center">
-												<label class="text-uppercase" for="exampleInputFile">Select your avatar</label>
-												<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-												<small id="fileHelp" class="form-text text-muted">Add an image of yourself or your favorite monster photo.</small>
-											</div>
-
+									<div class="form-group align-center">
+										<label class="text-uppercase" for="exampleInputFile">Select your avatar</label>
+										<span class="glyphicon glyphicon-cloud-upload"></span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar"></div>
+										</div>
+										<br/>
+										<input id="upload-input" type="file" name="uploads[]" multiple="multiple">
+										<small id="fileHelp" class="form-text text-muted">Add an image of yourself or your favorite monster photo.</small>
+									</div>
+					
 										<!-- <form action="" enctype="multipart/form-data" id="js-upload-form" method="post" name=
 										"js-upload-form">
 											<div class="form-inline">
@@ -222,15 +225,23 @@
 				<!-- </div>     -->
 			</div>
 		</div>
-  </section>
+
+		
+		
+		
+	</section>
+	
+	
+	
+
   <!-- JS Links -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
-	</script> 
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
 	</script> 
-	<script src="/signupjs">
-	</script>
+	<!-- <script src="/signupjs">
+	</script> -->
+	<script src="assets/js/uploadFile.js"></script>
 </body>
 </html>

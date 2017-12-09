@@ -11,6 +11,10 @@ var bodyParser = require('body-parser');
 // environment variables
 var env = require("dotenv").load();
 
+var path = require("path");
+var formidable = require('formidable');
+var fs = require('fs');
+
 // Middleware
 // to allow app to use bodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -41,7 +45,7 @@ var apiRoutes = require("./app/routes/apiRoutes.js")(app);
 app.use("/", routes);
 
 // Static directory
-app.use(express.static("./app/public"));
+app.use(express.static(path.join(__dirname, "./app/public")));
 
 //load passport strategies
 require('./app/config/passport/passport.js')(passport, models.user);
