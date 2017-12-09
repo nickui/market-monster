@@ -20,7 +20,7 @@
   "author": "Chris, Kristine, Maike, Nick, Nathan",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://market-monster.herokuapp.com/"
   },
   "homepage": "https://github.com/nickui/market-monster#readme",
   "dependencies": {
