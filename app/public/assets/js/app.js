@@ -14,6 +14,8 @@ var config = {
       stockBuys: [],
   }
   
+  document.getElementById('wallet-amount').innerHTML = "$" + user.bankBalance;
+
   function getStockData() {
       ticker = document.getElementById('ticker').value;
       axios.get(`https://api.iextrading.com/1.0/stock/` + ticker + `/quote`, config)
@@ -30,7 +32,7 @@ var config = {
           var companyNameCell = document.createElement("td");
           companyNameCell.innerHTML = res.data.companyName;
           var stockPriceCell = document.createElement("td");
-          stockPriceCell.innerHTML = res.data.latestPrice;
+          stockPriceCell.innerHTML = "$" + res.data.latestPrice;
           var buyButtonCell = document.createElement("td");
           // buyStock('APPL', 1.23, 1234553);
           buyButtonCell.innerHTML = '<button type="button" class="btn btn-primary" onclick="buyStock(\'' + res.data.symbol + '\', ' + res.data.latestPrice + ', ' + res.data.latestUpdate + ');">Buy</button>';
