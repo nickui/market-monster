@@ -68,6 +68,7 @@ h1 {
 	color: #8cffe6 !important;
 	background: rgba(3, 112, 255, 0.596) !important;
 }
+
 .eac-autocomplete {
 	width: 500px;
 }
@@ -76,22 +77,30 @@ h1 {
 }
 
       /* Extra Small Devices, Phones */ 
-      @media only screen and (min-width : 480px) {
-		
-      }
+      /* @media only screen and (min-width : 480px) {
+		.sidebar {
+			display: none !important;
+		}
+      } */
   
       /* Small Devices, Tablets */
-      @media only screen and (min-width : 768px) {
-		
-      }
+      /* @media only screen and (min-width : 768px) {
+		.sidebar {
+			display: none !important;
+		}
+      } */
   
       /* Medium Devices, Desktops */
-      @media only screen and (min-width : 992px) {
-
-      }
+      /* @media only screen and (min-width : 992px) {
+		.sidebar {
+			display: none !important;
+		}
+      } */
   
       /* Large Devices, Wide Screens */
-      @media only screen and (min-width : 1200px) {
-
+      /* @media only screen and (min-width : 1200px) {
+		.sidebar {
+			display: flex;
+		}
       
-      }
+      }  */
