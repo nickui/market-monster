@@ -46,3 +46,41 @@ body {
 .about-sections {
   padding-top: 5%;
 }
+
+.about-header {
+  background: url("../img/newspaper.jpeg");
+  background-size: 100% ;
+  height: 100%;
+  padding: 13%;
+}
+.about-text {
+  padding: 3% 2%;
+  width:65%;
+  height: 100%;
+  color: #FFF;
+  background: rgba(6, 109, 194, 0.651);
+  box-shadow: 10px 10px #8cffe47a;
+}
+
+.about-image-1 {
+  background: url("../img/dolla.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.about-image-2 {
+  background: url("../img/stock-charts.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.about-image-3 {
+  background: url("../img/iphone-stocks.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}

@@ -1,11 +1,10 @@
 {
     "development": {
-        "username": "root",
-        "password": "root",
+        "username": "uci.projects",
+        "password": "uciprojects123",
         "database": "passport_db",
         "host": "localhost",
         "dialect": "mysql",
-        "port": 8889,
         "operatorsAliases": false
     },
     "test": {
