@@ -1,10 +1,11 @@
 {
     "development": {
         "username": "root",
-        "password": "test",
+        "password": "root",
         "database": "passport_db",
         "host": "localhost",
         "dialect": "mysql",
+        "port": 8889,
         "operatorsAliases": false
     },
     "test": {
