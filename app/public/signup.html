@@ -7,7 +7,6 @@
 	<title>Market Monster</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel=
 	"stylesheet">
-	<link href="logincss" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/login.signup.css" type="text/css">
 </head>
 <body>
@@ -22,12 +21,12 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/about">About</a>
 				</li>
-				<li class="nav-item active">
+				<!-- <li class="nav-item active">
 					<a class="nav-link" href="/dashboard">Guest</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="/signup">Sign Up</a>
-				</li>
+				</li> -->
 			</ul><a class="btn btn-outline-primary my-2 my-sm-0" href="/signin">Log In</a>
 		</div>
   </nav>
@@ -72,13 +71,32 @@
             </div>
             
 						<div class="form-group">
-              <label class="text-uppercase" for="gender">Gender</label> 
-              <input class="form-control" name="bla" id="gender" placeholder="" type="text">
+							<label class="text-uppercase" for="gender">Gender</label> 
+							<div class="row">
+              <div class="form-check col-md-4">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="gender" id="male-gender" value="male" checked>
+										Male
+									</label>
+									</div>
+									<div class="form-check col-md-4">
+											<label class="form-check-label">
+												<input class="form-check-input" type="radio" name="gender" id="female-gender" value="female" checked>
+												Female
+											</label>
+											</div>
+											<div class="form-check col-md-4">
+											<label class="form-check-label">
+													<input class="form-check-input" type="radio" name="gender" id="other-gender" value="other" checked>
+													Other
+												</label>
+												</div>
+											</div>
             </div>
             
 						<div class="form-group">
               <label class="text-uppercase" for="birthday">Birthday</label> 
-              <input class="form-control" name="bla" id="birthday" placeholder="" type="text">
+              <input class="form-control" name="bla" id="birthday" placeholder="" type="date">
             </div>
             
 						<div class="form-group">
@@ -88,7 +106,20 @@
             
 						<div class="form-group">
 							<label class="text-uppercase" for="profileType">Private or Public Profile</label>
-							<input class="form-control" name="bla" id="profileType" placeholder="" type="text">
+							<div class="row">
+							<div class="form-check col-md-6">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="gridRadios" id="private-profile" value="private" checked>
+										Keep it hidden! (Private)
+									</label>
+									</div>
+									<div class="form-check col-md-6">
+											<label class="form-check-label">
+												<input class="form-check-input" type="radio" name="gridRadios" id="public-profile" value="public" checked>
+												Show it off! (Public)
+											</label>
+											</div>
+										</div>
             </div>
             
 						<div class="container upload-container">
@@ -116,13 +147,12 @@
 											</div>
 										</form> -->
                   </div>
-                  <br/>
-									<br/>
+                 
 									<!-- Drop Zone -->
-									<h4 class="text-center">Or drag and drop files below</h4>
+									<!-- <h4 class="text-center">Or drag and drop files below</h4>
 									<div class="upload-drop-zone" id="drop-zone">
 										Just drag and drop files here
-                  </div>
+                  </div> -->
                   <!-- Progress Bar -->
 									<!-- <div class="progress">
 										<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" role=

@@ -46,3 +46,15 @@ body {
 .about-sections {
   padding-top: 5%;
 }
+
+.about-header {
+  background: url("../img/newspaper.jpeg");
+  background-size: 100% ;
+}
+.about-text {
+  padding: 3% 2%;
+  width:65%;
+  color: #FFF;
+  background: rgba(6, 109, 194, 0.651);
+  box-shadow: 10px 10px #8cffe47a;
+}
