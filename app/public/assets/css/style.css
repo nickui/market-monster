@@ -1,91 +1,302 @@
 body {
-    color: #fff;
-    min-height: 75rem;
-    padding-top: 3.9%;
-    background: #8cffe6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
-  }
+  color: #fff;
+  min-height: 75rem;
+  padding-top: 3.9%;
+  background: #8cffe6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
+}
 
 .main-text {
-      position: absolute;
-      padding: 2% 0 ;
-      top: 50%;
-      left: 25%;
-      width: 96.7%;
-      color: #FFF;
-      background: rgba(6, 109, 194, 0.651);
-      box-shadow: 10px 10px #8cffe47a;
-      width: 50%;
-  }
+    position: absolute;
+    padding: 2% 0 ;
+    top: 50%;
+    left: 25%;
+    width: 96.7%;
+    color: #FFF;
+    background: rgba(6, 109, 194, 0.651);
+    box-shadow: 10px 10px #8cffe47a;
+    width: 50%;
+}
 
-  .main-headline {
-    font-size: 3.5em !important;
-  }
+.main-headline {
+  font-size: 3.5em !important;
+}
 
-  .sub-headline {
-    font-kerning: 2em;
-  }
+.sub-headline {
+  font-kerning: 2em;
+}
 
 .jumbo-formatting {
-  padding: 10%; 
-  }
+padding: 10%; 
+}
 
 .bg-dark{
 
-    background: rgba(3, 112, 255, 0.596) !important;
+  background: rgba(3, 112, 255, 0.596) !important;
 }
 
 .navbar a {
-  color: #8cffe6 !important;
+color: #8cffe6 !important;
 }
 
 .home-card {
-  text-align: center;
+text-align: center;
 }
 
 .about-sections {
-  padding-top: 5%;
+padding-top: 5%;
 
 }
 
 .about-header {
-  background: url("../img/newspaper.jpeg");
-  background-size: 100% ;
-  height: 100%;
-  padding: 13%;
+background: url("../img/newspaper.jpeg");
+background-size: 100% ;
+height: 100%;
+padding: 13%;
 }
 .about-text {
-  padding: 3% 2%;
-  width:65%;
-  height: 100%;
-  color: #FFF;
-  background: rgba(6, 109, 194, 0.651);
-  box-shadow: 10px 10px #8cffe47a;
+padding: 3% 2%;
+width:65%;
+height: 100%;
+color: #FFF;
+background: rgba(6, 109, 194, 0.651);
+box-shadow: 10px 10px #8cffe47a;
 }
 
 .about-image-1 {
-  background: url("../img/dolla.jpg");
-  background-size: cover;
-  background-position: center;
-  float: right;
-  width: 500px;
-  height: 350px;
+background: url("../img/dolla.jpg");
+background-size: cover;
+background-position: center;
+float: right;
+width: 500px;
+height: 350px;
 }
 
 .about-image-2 {
-  background: url("../img/stock-charts.jpg");
-  background-size: cover;
-  width: 500px;
-  height: 350px;
+background: url("../img/stock-charts.jpg");
+background-size: cover;
+width: 500px;
+height: 350px;
 }
 
 .about-image-3 {
-  background: url("../img/iphone-stocks.jpg");
-  background-size: cover;
-  background-position: center;
-  float: right;
-  width: 500px;
-  height: 350px;
+background: url("../img/iphone-stocks.jpg");
+background-size: cover;
+background-position: center;
+float: right;
+width: 500px;
+height: 350px;
 }
 
+.card-text {
+color: #0c415e;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .main-text {
+    position: absolute;
+    padding: 0 ;
+    top: 20%;
+    left: 15%;
+    color: #FFF;
+    background: rgba(6, 109, 194, 0.651);
+    box-shadow: 10px 10px #8cffe47a;
+    width: 70%;
+  }
+  .main-headline {
+    font-size: 1em !important;
+  }
+  .sub-headline {
+    font-size: 1em !important;
+  }
+  body {
+    padding-top: 14%;
+  }
+.about-headline {
+  font-size: 2em;
+}
+
+
+}
+  
+      /* Extra Small Devices, Phones */ 
+      @media only screen and (min-width : 480px) {
+        .main-text {
+          position: absolute;
+          padding: 2% 0 ;
+          top: 23%;
+          left: 25%;
+          width: 96.7%;
+          color: #FFF;
+          background: rgba(6, 109, 194, 0.651);
+          box-shadow: 10px 10px #8cffe47a;
+          width: 50%;
+      }
+      .main-headline {
+        font-size: 1em !important;
+      }
+      .sub-headline {
+        font-size: 1em !important;
+      }
+      body {
+        padding-top: 11.5%;
+      }
+      .about-headline {
+        font-size: 2.2em;
+      }
+      }
+  
+      /* Small Devices, Tablets */
+      @media only screen and (min-width : 768px) {
+        .main-text {
+          position: absolute;
+          padding: 2% 0 ;
+          top: 45%;
+          left: 20%;
+          width: 96.7%;
+          color: #FFF;
+          background: rgba(6, 109, 194, 0.651);
+          box-shadow: 10px 10px #8cffe47a;
+          width: 60%;
+      }
+      .main-headline {
+        font-size: 2em !important;
+      }
+      .sub-headline {
+        font-size: 1.3em !important;
+      }
+      body {
+        padding-top: 7.3%;
+      }
+      .about-headline {
+        font-size: 2.5em;
+      }
+      }
+  
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 992px) {
+        .main-text {
+          position: absolute;
+          padding: 2% 0 ;
+          top: 55%;
+          left: 25%;
+          color: #FFF;
+          background: rgba(6, 109, 194, 0.651);
+          box-shadow: 10px 10px #8cffe47a;
+          width: 50%;
+      }
+      .main-headline {
+        font-size: 3em !important;
+      }
+      .sub-headline {
+        font-size: 1.7em !important;
+      }
+      body {
+        padding-top: 5.6%;
+      }
+      .about-headline {
+        font-size: 3em;
+      }
+      }
+  
+      /* Large Devices, Wide Screens */
+      @media only screen and (min-width : 1200px) {
+        body {
+          color: #fff;
+          min-height: 75rem;
+          padding-top: 3.9%;
+          background: #8cffe6;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to bottom, #8cffe6, #00a2ff);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to bottom, #8cffe6, #00a2ff); 
+        }
+      
+      .main-text {
+            position: absolute;
+            padding: 2% 0 ;
+            top: 50%;
+            left: 25%;
+            width: 96.7%;
+            color: #FFF;
+            background: rgba(6, 109, 194, 0.651);
+            box-shadow: 10px 10px #8cffe47a;
+            width: 50%;
+        }
+      
+        .main-headline {
+          font-size: 3.5em !important;
+        }
+      
+        .sub-headline {
+          font-kerning: 2em;
+        }
+      
+      .jumbo-formatting {
+        padding: 10%; 
+        }
+      
+      .bg-dark{
+      
+          background: rgba(3, 112, 255, 0.596) !important;
+      }
+      
+      .navbar a {
+        color: #8cffe6 !important;
+      }
+      
+      .home-card {
+        text-align: center;
+      }
+      
+      .about-sections {
+        padding-top: 5%;
+      
+      }
+      
+      .about-header {
+        background: url("../img/newspaper.jpeg");
+        background-size: 100% ;
+        height: 100%;
+        padding: 13%;
+      }
+      .about-text {
+        padding: 3% 2%;
+        width:65%;
+        height: 100%;
+        color: #FFF;
+        background: rgba(6, 109, 194, 0.651);
+        box-shadow: 10px 10px #8cffe47a;
+      }
+      
+      .about-image-1 {
+        background: url("../img/dolla.jpg");
+        background-size: cover;
+        background-position: center;
+        float: right;
+        width: 500px;
+        height: 350px;
+      }
+      
+      .about-image-2 {
+        background: url("../img/stock-charts.jpg");
+        background-size: cover;
+        width: 500px;
+        height: 350px;
+      }
+      
+      .about-image-3 {
+        background: url("../img/iphone-stocks.jpg");
+        background-size: cover;
+        background-position: center;
+        float: right;
+        width: 500px;
+        height: 350px;
+      }
+      
+      .card-text {
+        color: #0c415e;
+      }
+      
+      }
