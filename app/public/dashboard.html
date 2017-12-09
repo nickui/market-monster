@@ -93,10 +93,10 @@
 					<h4 class="card-title" id="buy-stocks">Buy Stocks</h4>
 					<div class="form-group">
 						<div class="input-group">
-							<label for="ticker">Stock Ticker:</label> <input class="form-control" id="ticker"
-							placeholder="Search&hellip;" type="text"> <span class="input-group-btn"><button class=
-							"btn btn-default" onclick="getStockData();" type="button"><span class=
-							"input-group-btn">Go</span></button></span>
+							<input class="form-control" id="ticker" placeholder="Search Stock Ticker" type="text" name="ticker"> 
+									<button class="btn btn-lg btn-primary" onclick="getStockData();" type="button" id="tickerBTN">Go
+										<!-- <span class="input-group-btn">Go</span> -->
+									</button>
 						</div>
 					</div>
 					<table class="table" id="buyStock">
@@ -231,7 +231,7 @@
   </main>
   
   <!-- JS Links -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
 	</script> 
